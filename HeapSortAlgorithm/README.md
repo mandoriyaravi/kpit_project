@@ -7,7 +7,7 @@ This Spring Boot application offers a variety of heap operations and a heap-base
 
 ## Getting Started
 
-#####Prerequisites:-
+Prerequisites:-
 
 Before running the Heap Sorting Algorithm Spring Boot Application, ensure you have the following prerequisites:
 
