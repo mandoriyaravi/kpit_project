@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HeapSortAlgorithmApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HeapSortAlgorithmApplication.class, args);
+		 SpringApplication.run(HeapSortAlgorithmApplication.class, args);
 	}
 
 }

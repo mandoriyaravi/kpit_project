@@ -29,7 +29,7 @@ public class HeapSortController {
 	public int getMaxValue() {
 		return heapSortService.getMaxValue();
 	}
-
+  
 	@GetMapping("/min")
 	public int getMinValue() {
 		return heapSortService.getMinValue();

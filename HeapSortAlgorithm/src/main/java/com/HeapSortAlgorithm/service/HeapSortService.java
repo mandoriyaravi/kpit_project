@@ -15,4 +15,6 @@ public interface HeapSortService {
 	void clearList();
 
 	int[] applySortingBasedOnType(int[] arr, SortingType sortingType, Boolean isSortingApply);
+
+	
 }
