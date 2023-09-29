@@ -27,9 +27,9 @@ Follow these steps to run the application:
 
 The application will start and listen on http://localhost:8080 by default.
 
-##API Endpoints
+## API Endpoints
 
-###*Insert Values:-
+### *Insert Values:-
 
 URL: http://localhost:8080/api/insert
 
@@ -48,7 +48,7 @@ curl --location 'http://localhost:8080/api/insert' \
 [1,6,8,43,54]
 '
 
-#####*Get Maximum Value:-
+##### *Get Maximum Value:-
 
 URL: http://localhost:8080/api/max
 
@@ -65,7 +65,7 @@ curl --location --request GET 'http://localhost:8080/api/max' \
 [1,6,8,43,54]
 '
 
-#####*Get Minimum Value:-
+##### *Get Minimum Value:-
 URL: http://localhost:8080/api/min
 
 HTTP Method: GET
@@ -82,14 +82,14 @@ curl --location --request GET 'http://localhost:8080/api/min' \
 '
 
 
-#####*Clear Heap List
+##### *Clear Heap List
 URL: http://localhost:8080/api/clearlist
 
 HTTP Method: DELETE
 
 Response: 200 ok
 
-#####*Delete Minimum Element
+##### *Delete Minimum Element
 URL: http://localhost:8080/api/deletemin
 
 HTTP Method: DELETE
@@ -97,7 +97,7 @@ HTTP Method: DELETE
 Response: 200 ok
 
 
-#####*Apply Min Heap Sorting:-
+##### *Apply Min Heap Sorting:-
 URL: http://localhost:8080/api/applyMinHeap
 
 HTTP Method: POST
@@ -106,7 +106,7 @@ Request Body: An array of integers.
 
 Response: An array with a min-heap structure applied (without sorting).
 
-#####Description:
+##### Description:
 This endpoint accepts an array of integers and applies a min-heap structure to the input array, transforming it into a valid min-heap.
  The heapify operation is performed on the input array, ensuring that the parent nodes are smaller than their child nodes (min-heap property).
 
@@ -116,7 +116,7 @@ POST /api/applyMinHeap
   "arr": [4, 2, 9, 1, 5, 6]
 }
 
-#####*Apply Max Heap Sorting:-
+##### *Apply Max Heap Sorting:-
 URL: http://localhost:8080/api/applyMaxHeap
 
 HTTP Method: POST
@@ -125,7 +125,7 @@ Request Body: An array of integers.
 
 Response: An array with a max-heap structure applied (without sorting).
 
-#####Description:
+##### Description:
 This endpoint is similar to /api/applyMinHeap, but it applies a max-heap structure to the input array, 
 ensuring that the parent nodes are larger than their child nodes (max-heap property).
 
@@ -135,7 +135,7 @@ POST /api/applyMaxHeap
   "arr": [4, 2, 9, 1, 5, 6]
 }
 
-#####*Apply Min Heap Sorting & Sort of element:-
+##### *Apply Min Heap Sorting & Sort of element:-
 URL: http://localhost:8080/api/applyMinHeapSort
 
 HTTP Method: POST
@@ -144,7 +144,7 @@ Request Body: An array of integers.
 
 Response: An array sorted in ascending order using min-heap sort.
 
-#####Description:
+##### Description:
 This endpoint applies a min-heap sort to the input array, resulting in a sorted array in ascending order.
  It first converts the input array into a min-heap and then repeatedly extracts the minimum element (the root) while maintaining the min-heap property.
 
@@ -153,7 +153,7 @@ POST /api/applyMinHeapSort
 {
   "arr": [4, 2, 9, 1, 5, 6]
 }
-#####*Apply Max Heap Sorting and Sort of element:-
+##### *Apply Max Heap Sorting and Sort of element:-
 URL: http://localhost:8080/api/applyMaxHeapSort
 
 HTTP Method: POST
@@ -162,7 +162,7 @@ Request Body: An array of integers.
 
 Response: An array sorted in descending order using max-heap sort.
 
-#####Description:
+##### Description:
 Similar to /api/applyMinHeapSort, this endpoint applies a max-heap sort to the input array, resulting in a sorted array in descending order.
  It first converts the input array into a max-heap and then repeatedly extracts the maximum element (the root) while maintaining the max-heap property.
 
