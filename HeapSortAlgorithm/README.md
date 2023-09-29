@@ -27,9 +27,9 @@ Follow these steps to run the application:
 
 The application will start and listen on http://localhost:8080 by default.
 
-#API Endpoints
+##API Endpoints
 
-#####*Insert Values:-
+###*Insert Values:-
 
 URL: http://localhost:8080/api/insert
 
