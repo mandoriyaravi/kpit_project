@@ -17,7 +17,7 @@ Prerequisites :-
 Java 8 or higher
 
 
-##Running the Application
+## Running the Application
 1. Clone the repository to your local machine.
 
 2. Open the project in your favorite Java IDE (e.g., IntelliJ IDEA, Eclipse).
@@ -28,8 +28,8 @@ Java 8 or higher
 
 The application will start and listen on http://localhost:8080 by default.
 
-###API Endpoints
-#####SORT ARRAY :- 
+### API Endpoints
+##### SORT ARRAY :- 
 URL: http://localhost:8080/sortarray 
  
 HTTP Method: POST  
@@ -38,7 +38,7 @@ Response: An array of sorted integers.
 
 
 
-#####Example Request:
+##### Example Request:
 json:-
 
 POST /sortarray
@@ -49,14 +49,14 @@ POST /sortarray
   
 }
 
-#####Example Response:
+##### Example Response:
 
 json:-
 
 output:- [1, 2, 4, 5, 6, 9]
 
 
-##Error Handling
+## Error Handling
 1. If the input array contains negative numbers, the application will return an InvalidArrayInputException.
 
 2. Any other unexpected errors during the sorting process will result in a SortingException with an error message.
